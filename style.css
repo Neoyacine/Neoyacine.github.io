@@ -2,30 +2,36 @@
     margin: 0;
     padding: 0;
     list-style: none;
-    box-sizing: border-box;
     font-size: 1.1rem ;
 }
 body{
     line-height: 1.2rem;
     font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    /* font-family: 'Ubuntu', sans-serif; */
 }
 header, #section1{
     color: #ffffff;
-    text-shadow: #090f5f 2px 0 2px;
+    text-shadow: #090f5f 5px 0 2px;
 }
-
-h1, h2, h3{
+#linkedin{
+    width: 50px;
+    margin-top: 2%;
+}
+h1, h2{
     font-family: 'Ubuntu', sans-serif;
+    line-height: 2.5rem;
 }
 h1{
     margin-top: 20px;
 }
-html{
-    scroll-behavior: smooth;
+.section{
+    padding-bottom: 20px;
+}
+#section1{
+    text-align: center;
+    padding: 5% 10% 5% 10%;
 }
 #section2{
-    background-color: rgba(45, 34, 151, 0.897);
+    background-color: rgba(46, 34, 151, 0.692);
 }
 #section3{
     background-color: rgba(78, 166, 153, 0.89);
@@ -50,12 +56,15 @@ a:hover{
     color: rgb(8, 76, 137);
 }
 #bgimg{
-    background: linear-gradient(to right, rgba(7, 7, 7, 0.178), rgba(4, 4, 156, 0.185)) ,url("img/pexels-luis-gomes-546819.jpg");
-    /* background-color: hsla(0, 0%, 100%, 0.466); */
+    background: linear-gradient(to right, rgba(18, 23, 53, 0.692), rgba(1, 1, 66, 0.356)) ,url("img/pexels-luis-gomes-546819.jpg");
 }
 .logo{
     width: 60px;
     margin: 30px 0 0 30px;
+}
+/* Début du navigateur */
+html{
+    scroll-behavior: smooth;
 }
 .wrapper{
     position: fixed;
@@ -155,7 +164,6 @@ svg, .logos{
     position: absolute;
     content: "";
     background: #fff;
-
     width: 100%;
     height: 100%;
     left: 0;
@@ -205,10 +213,7 @@ svg, .logos{
      transition-delay: .6s;
     transform: translateX(-100px);
 }
-#section1{
-    text-align: center;
-    padding: 5% 10% 5% 10%;
-}
+/* Fin du navigateur */
 h1{
     font-size: 2.5rem;
 }
@@ -219,10 +224,8 @@ h2{
     text-align: center;
     padding: 3% 3% 5% 3%;
     position: relative;
-    /* margin: 3%; */
-    padding: 3%;
+    padding: 5%;
     font-size: 1.5rem;
-    /* margin: 10%; */
 }
 h2::after{
     content: '';
@@ -233,10 +236,14 @@ h2::after{
     left: 50%;
     transform: translateX(-50%);
     border-radius: 5px;
-    bottom: 2px;    /* mediaqueries */
+    bottom: 2px;
 }
-.propos{
-    margin: 2% 5% 2% 5%;
+h3{
+    width: 80%;
+    margin: 20px auto;
+    font-style: italic;
+    font-weight: 300;
+    font-family: 'Ubuntu', sans-serif;
 }
 #cv{
     text-align: center;
@@ -253,31 +260,22 @@ h2::after{
     margin: 2%;
 }
 p{
-    margin: 2% 5% 2% 5%;
+    margin: 4% 5% 0% 5%;
+    padding-bottom: 2%;
 }
 .flexhead{
     display: flex;
     flex-wrap: wrap;
-    /* margin: 25px 0 0 25px; */
 }
 #eponge{
     width: 11%;
     float: right;
 }
-/* .skill{
-    padding: 1%;
-    background-color: rgb(232, 229, 218);
-    margin: 3%;
-    border-radius: 15px;
-} */
 #miro{
     height: 100px;
 }
 #twig{
     height: 115px;
-}
-#text{
-    margin:2% 5% 2% 5% ;
 }
 .flex{
     display: flex;
@@ -305,6 +303,22 @@ figcaption{
     text-align: center;
 }
 @media screen and (min-width:760px){
+    #linkedin{
+        width: 70px;
+    }
+    p{
+        margin-top: 1%;
+    }
+    h2{
+    padding: 2%;
+    }
+    h3{
+        width: 70%;
+        margin: 50px auto;
+        font-style: italic;
+        font-weight: 300;
+        font-family: 'Ubuntu', sans-serif;
+    }
     #maquette{
         display: flex;
         flex-wrap: wrap;
@@ -312,39 +326,34 @@ figcaption{
     }
     #maquette li{
         width: 45%;
-    }
+        }
     section{
-    margin: 0 auto;
-    padding-bottom: 3%;
-    }
-    .section{
-        width: 60%;
         margin: 0 auto;
-    }
-    *{
-        font-size: 25px;
-    }
+        padding-bottom: 3%;
+        }
+    .section{
+            width: 70%;
+            margin: 0 auto;
+        }
+        *{
+            font-size: 25px;
+        }
     .menu-btn{
-        position: fixed;
-        width: 75px;
-    }
+            position: fixed;
+            width: 75px;
+        }
     .stage{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-around;
-    }
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
     .stage div{
-        width: 40%;
-    }
+            width: 40%;
+        }
+    .flex{
+            margin-top: 2%;
+        }
     .maqmob{
-        width: 285px;
+            width: 285px;
+        }
     }
-}
-/* @media screen and (max-width:759px) {
-    .menu-btn{
-        display: block;      A voir pour afficher les menu sur PC
-    }
-} */
-/* .stage{
-    margin: 2% 5% 2% 5%; 
-} */

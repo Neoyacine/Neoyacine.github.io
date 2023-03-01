@@ -6,11 +6,11 @@
 }
 body{
     line-height: 1.2rem;
-    font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    /* font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif; */
 }
 header, #section1{
     color: #ffffff;
-    text-shadow: #090f5f 5px 0 2px;
 }
 #linkedin{
     width: 50px;
@@ -23,6 +23,9 @@ h1, h2{
 h1{
     margin-top: 20px;
 }
+#section1{
+    text-shadow: #090f5f 5px 0 2px;
+}
 .section{
     padding-bottom: 20px;
 }
@@ -30,7 +33,25 @@ h1{
     text-align: center;
     padding: 5% 10% 5% 10%;
 }
+/* couleur des sections */
 #section2{
+    background-color: #2196f3;
+}
+#section3{
+    background-color: #64b5f6;
+}
+#section4{
+    background-color: #64b5f6;
+}
+.section5{
+    background-color: #42a5f5;
+}
+#section6{
+    background-color: #42a5f5;
+}
+#section7{
+    background-color: #2196f3;
+/* #section2{
     background-color: rgba(46, 34, 151, 0.692);
 }
 #section3{
@@ -46,7 +67,7 @@ h1{
     background-color: rgb(111, 237, 183);
 }
 #section7{
-    background-color: rgb(78, 166, 153);
+    background-color: rgb(78, 166, 153); */
 }
 a{
     color: black;
@@ -57,6 +78,7 @@ a:hover{
 }
 #bgimg{
     background: linear-gradient(to right, rgba(18, 23, 53, 0.692), rgba(1, 1, 66, 0.356)) ,url("img/pexels-luis-gomes-546819.jpg");
+    background-repeat: no-repeat;
 }
 .logo{
     width: 60px;
@@ -242,6 +264,7 @@ h3{
     width: 80%;
     margin: 20px auto;
     font-style: italic;
+    font-size: 1rem;
     font-weight: 300;
     font-family: 'Ubuntu', sans-serif;
 }
@@ -332,12 +355,12 @@ figcaption{
         padding-bottom: 3%;
         }
     .section{
-            width: 70%;
-            margin: 0 auto;
+        width: 70%;
+        margin: 0 auto;
         }
-        *{
-            font-size: 25px;
-        }
+    *{
+        font-size: 25px;
+    }
     .menu-btn{
             position: fixed;
             width: 75px;
@@ -351,7 +374,7 @@ figcaption{
             width: 40%;
         }
     .flex{
-            margin-top: 2%;
+            margin: 2% 5% 0 5%;
         }
     .maqmob{
             width: 285px;

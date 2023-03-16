@@ -84,6 +84,22 @@ a:hover{
     width: 60px;
     margin: 30px 0 0 30px;
 }
+.sidebar{
+    position: fixed;
+    top: 30%;
+    left: 0px;
+    background-color: rgba(255, 255, 255, 0.911);
+    box-shadow: #ffffffb0;
+    padding: 0.4rem;
+    display: grid;
+    border-radius: 5px;
+}
+
+#logo-email, #logo-phone, #logo-linkedin{ 
+    width: 30px;
+}
+
+
 /* Début du navigateur */
 html{
     scroll-behavior: smooth;

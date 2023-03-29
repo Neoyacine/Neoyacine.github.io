@@ -2,8 +2,9 @@
     margin: 0;
     padding: 0;
     list-style: none;
-    font-size: 1.1rem ;
+    font-size: 1rem ;
     text-decoration: none;
+
 }
 body{
     line-height: 1.2rem;
@@ -29,11 +30,12 @@ h1{
 
 /* bannière */
 #fixed-head{
-    background-color: rgb(34, 113, 231);
+    background-color: rgba(34, 113, 231, 0.836);
     text-shadow: none;
     position: fixed;
     top: 0px;
     width: 100vw;
+    height: 8vh;
     z-index: 3;
     /* mettre transition */
 }
@@ -81,15 +83,27 @@ transition: 0.5s;
 }
 .section5{
     /* background-color: #42a5f5; */
-    background:linear-gradient(to right, rgba(255, 255, 255, 0.692), rgba(1, 1, 66, 0.356)),  no-repeat url("img/hard-skills.jpg");
+    background:linear-gradient(to right, rgba(255, 255, 255, 0.692), rgba(1, 1, 66, 0.356)),  no-repeat url("img/hard-skill2.jpg");
     background-size: cover;
 }
 /* #section6{
     background-color: #42a5f5;
 } */
 #section7{
-    background-color: #2196f3;
+    /* background-color: #2196f3; */
+    background-color: #dbdbdbaf;
 }
+#contact p{
+    text-align: center;
+    
+    width: 80vw;
+}
+#phone-number{
+    width: 60vw;
+    position: relative;
+    bottom: 15px;
+
+  }
 a{
     color: black;
     font-weight: 700;
@@ -100,6 +114,7 @@ a:hover{
 #bgimg{
     background: linear-gradient(to right, rgba(18, 23, 53, 0.692), rgba(1, 1, 66, 0.356)) ,url("img/pexels-luis-gomes-546819.jpg");
     background-repeat: no-repeat;
+    background-size: cover;
 }
 .logo{
     width: 60px;
@@ -149,8 +164,8 @@ html{
 .menu-btn{
     position: fixed;
     z-index: 5;
-    right: 30px;
-    top: 30px;
+    right: 10px;
+    top: 10px;
     height: 50px;
     width: 60px;
     text-align: center;
@@ -315,6 +330,7 @@ h3{
 }
 #cv{
     text-align: center;
+    margin-bottom: 20px;
 }
 .stage div{
     border: solid rgb(241, 218, 142) 2px;
@@ -328,7 +344,7 @@ h3{
     margin: 2%;
 }
 p{
-    margin: 4% 5% 0% 5%;
+    margin: 0 25px;
     padding-bottom: 2%;
 }
 .flexhead{
@@ -358,7 +374,7 @@ figure img{
     display: block;
     max-width: 100%;
     margin: 0 auto;
-    padding: 20px;
+    padding: 2px;
     transition: transform 1s;
 }
 figure img:hover{
@@ -369,18 +385,47 @@ figure img:hover{
 }
 #skillprogress{
     width: 70%;
-    margin: 1% auto;
+    margin: 0 auto;
+    padding: 25px 0;
 }
 figcaption{
     text-align: center;
+    padding: 10px 0;
+}
+footer{
+    background-color: #1a73e8;
+    height: 50px;
+    text-align: center;
+    color: white;
+}
+footer p{
+    position:relative;
+    top: 20px;
 }
 @media screen and (min-width:760px){
     /* enlever menu et mettre en dur dans la bannière */
+    #fixed-head{
+        height: 80px;
+    }
+    #phone-number{
+        width: 14vw;
+        position: relative;
+        bottom: 15px;
+      }
+    #contact {
+        padding: 0;
+    }
+    #contact p{
+        padding: 0;
+    }
+    #section1{
+        padding: 5% 10% 3% 10%;
+    }
     #linkedin{
         width: 70px;
     }
     p{
-        margin: 1% auto;
+        margin:0 auto;
     }
 
     h2{
@@ -400,34 +445,56 @@ figcaption{
     }
     #maquette li{
         width: 45%;
-        }
+    }
+    .reseaux{
+        margin: 4% auto;
+    }
     section{
         margin: 0 auto;
-        padding-bottom: 3%;
-        }
+        padding-bottom: 2%;
+    }
     .section{
-        width: 70%;
+        width: 90%;
         margin: 0 auto;
-        }
+    }
     *{
-        font-size: 25px;
+    font-size: 25px;
     }
     .menu-btn{
-            position: fixed;
-            width: 75px;
-        }
+        position: fixed;
+        width: 75px;
+    }
     .stage{
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-around;
-        }
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
     .stage div{
-            width: 40%;
-        }
+        width: 40%;
+    }
+    .propos{
+        width: 50%;
+    }
+    h4{
+        padding-top: 2%;
+    }
     .flex{
-            margin: 2% 5% 0 5%;
-        }
+        width: 80vw;
+        margin: 50px auto;
+    }
     .maqmob{
             width: 285px;
         }
+    .text{
+        width: 80vw;
+        margin-top: 30px;
+    }
+    #logo-dev{
+        margin: 1% 1%;
+    }
+    footer p{
+        padding: 0;
+        font-size: 18px;
+
+    }
     }

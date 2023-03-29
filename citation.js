@@ -13,3 +13,11 @@ const citation = document.getElementById("citations");
 let citations = [cita0, cita1, cita2, cita3, cita4, cita5, cita6];
 
 console.log(citations)
+let slideIndex = 1
+slides(slideIndex)
+function addSlide(n){
+    slides(slideIndex += n);
+}
+
+function currentSlide(n)
+citation.innerHTML = cita

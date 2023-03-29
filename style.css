@@ -3,6 +3,7 @@
     padding: 0;
     list-style: none;
     font-size: 1.1rem ;
+    text-decoration: none;
 }
 body{
     line-height: 1.2rem;
@@ -23,8 +24,42 @@ h1, h2{
 h1{
     margin-top: 20px;
 }
-#section1{
-    text-shadow: #090f5f 5px 0 2px;
+/* animation h1 */
+/* .class */
+
+/* bannière */
+#fixed-head{
+    background-color: rgb(34, 113, 231);
+    text-shadow: none;
+    position: fixed;
+    top: 0px;
+    width: 100vw;
+    z-index: 3;
+    /* mettre transition */
+}
+#fixed-head p{
+    text-align: center;
+    font-size: 40px;
+    font-weight: 700;
+    font-family: 'Parisienne', cursive;
+    color: rgb(255, 255, 255);
+    position: relative;
+    top: 20px;
+}
+#cv a{
+background-color: transparent;
+font-weight: 700;
+line-height: 30px;
+color: rgb(0, 89, 255);
+padding: 15px 15px;
+font-size: 14px;
+border: 1px solid #999;
+border-radius: 10px;
+transition: 0.5s;
+}
+#cv a:hover{
+    color: #ffffff;
+    background-color: #1a73e8;
 }
 .section{
     padding-bottom: 20px;
@@ -32,10 +67,11 @@ h1{
 #section1{
     text-align: center;
     padding: 5% 10% 5% 10%;
+    text-shadow: #090f5f 5px 0 2px;
 }
 /* couleur des sections */
 #section2{
-    background-color: #2196f3;
+    background-color: #ffffff;
 }
 #section3{
     background-color: #64b5f6;
@@ -44,30 +80,15 @@ h1{
     background-color: #64b5f6;
 }
 .section5{
-    background-color: #42a5f5;
+    /* background-color: #42a5f5; */
+    background:linear-gradient(to right, rgba(255, 255, 255, 0.692), rgba(1, 1, 66, 0.356)),  no-repeat url("img/hard-skills.jpg");
+    background-size: cover;
 }
-#section6{
+/* #section6{
     background-color: #42a5f5;
-}
+} */
 #section7{
     background-color: #2196f3;
-/* #section2{
-    background-color: rgba(46, 34, 151, 0.692);
-}
-#section3{
-    background-color: rgba(78, 166, 153, 0.89);
-}
-#section4{
-    background-color: rgb(45, 216, 129);
-}
-.section5{
-    background-color: rgb(111, 237, 183);
-}
-#section6{
-    background-color: rgb(111, 237, 183);
-}
-#section7{
-    background-color: rgb(78, 166, 153); */
 }
 a{
     color: black;
@@ -84,12 +105,20 @@ a:hover{
     width: 60px;
     margin: 30px 0 0 30px;
 }
+
+
+#ma-photo{
+    width: 300px;
+    margin-bottom: 25px;
+}
+/* appliquer un hover? */
+
 .sidebar{
     position: fixed;
     top: 30%;
     left: 0px;
     background-color: rgba(255, 255, 255, 0.911);
-    box-shadow: #ffffffb0;
+    box-shadow: 2px 2px 2px #6b6b6bb0;
     padding: 0.4rem;
     display: grid;
     border-radius: 5px;
@@ -143,7 +172,7 @@ svg, .logos{
     top: calc(50% - 1px);
     left: 30%;
     width: 40%;
-    border-bottom: 2px solid #746767;
+    border-bottom: 2px solid #ffffff;
     transition: transform .6s cubic-bezier(0.215, 0.61, 0.355, 1);
 }
 .menu-btn:before{
@@ -330,24 +359,30 @@ figure img{
     max-width: 100%;
     margin: 0 auto;
     padding: 20px;
-    transition: transform 2s;
+    transition: transform 1s;
 }
 figure img:hover{
-    transform: scale(1.2)
+    transform: scale(1.1)
 }
 .maqmob{
     width: 190px;
+}
+#skillprogress{
+    width: 70%;
+    margin: 1% auto;
 }
 figcaption{
     text-align: center;
 }
 @media screen and (min-width:760px){
+    /* enlever menu et mettre en dur dans la bannière */
     #linkedin{
         width: 70px;
     }
     p{
-        margin-top: 1%;
+        margin: 1% auto;
     }
+
     h2{
     padding: 2%;
     }

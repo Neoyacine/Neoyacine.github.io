@@ -11,6 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Parisienne&display=swap" rel="stylesheet">
     <script defer src="index.js"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
     <link rel="stylesheet" href="slider.css">
     <!-- icone sur l'onglet -->
     <link rel="shortcut icon" href="img/devweb2.png">
@@ -46,7 +47,13 @@
         <section id="section1">
             <h1 class = "animation">YACINE DJAHAFI</h1><br><br>
             <h2>Développeur Web Junior</h2> <br>
-            <h3>"L'enseignement de l'informatique ne peut faire de personne un programmeur expert plus que l'étude des pinceaux et du pigment peut faire de quelqu'un un peintre expert." - Eric S. Raymond</h3>
+            <!-- Slider de citation -->
+            
+            <div id="cursor">
+                <h3 id="citations">"L'enseignement de l'informatique ne peut faire de personne un programmeur expert plus que l'étude des pinceaux et du pigment peut faire de quelqu'un un peintre expert." - Eric S. Raymond</h3>
+                <p onclick="addSlide(-1)" href="" class="previous"><</p>
+                <p onclick="addSlide(1)" href="" class="next">></p>
+            </div>
             <div class="reseaux">
                 <h4>Suivez-moi</h4>
                 <a target="_blank" href="https://www.linkedin.com/in/yacine-djahafi/"><img draggable="false" id="linkedin" src="img/linkedin2.png" alt="logo de LinkedIn"></a>

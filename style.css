@@ -85,6 +85,7 @@ transition: 0.5s;
     /* background-color: #42a5f5; */
     background:linear-gradient(to right, rgba(255, 255, 255, 0.692), rgba(1, 1, 66, 0.356)),  no-repeat url("img/hard-skill2.jpg");
     background-size: cover;
+    background-position: center;
 }
 /* #section6{
     background-color: #42a5f5;
@@ -115,6 +116,8 @@ a:hover{
     background: linear-gradient(to right, rgba(18, 23, 53, 0.692), rgba(1, 1, 66, 0.356)) ,url("img/pexels-luis-gomes-546819.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+    background-position:center;
+    background-attachment: fixed;
 }
 .logo{
     width: 60px;
@@ -402,10 +405,61 @@ footer p{
     position:relative;
     top: 20px;
 }
+@media screen and (max-width: 759px) {
+    #citations{
+        position: static;
+    }
+    .previous, .next{
+        position:absolute;
+        top: 380px;
+        cursor: pointer;
+        font-weight: 900;
+        font-size: 25px;
+        border: 3px solid white;
+        border-radius: 50%;
+        padding: 10px;
+        transition:0.5s;
+    }
+    .previous{
+        right: 350px;
+    }
+    .next{
+        left: 350px;
+    }
+}
+.previous:hover, .next:hover{
+    /* faire hover */
+    transform: scale(1.1);
+    color: rgb(255, 255, 255);
+    text-shadow: rgb(255, 217, 67) 2px 2px 10px ;
+    
+}
 @media screen and (min-width:760px){
     /* enlever menu et mettre en dur dans la bannière */
     #fixed-head{
         height: 80px;
+    }
+    #citations{
+        position: static;
+    }
+    .previous, .next{
+        position:absolute;
+        top: 580px;
+        cursor: pointer;
+        font-weight: 900;
+        font-size: 25px;
+        border: 2px solid white;
+        border-radius: 50%;
+        width: 30px;
+        padding: 10px;
+        transition: 0.5s;
+    }
+    .previous{
+       left: 330px;
+    
+    }
+    .next{
+        right: 330px;
     }
     #phone-number{
         width: 14vw;
@@ -447,7 +501,7 @@ footer p{
         width: 45%;
     }
     .reseaux{
-        margin: 4% auto;
+        margin:0 auto;
     }
     section{
         margin: 0 auto;
@@ -495,6 +549,5 @@ footer p{
     footer p{
         padding: 0;
         font-size: 18px;
-
     }
     }

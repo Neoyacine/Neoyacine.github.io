@@ -1,14 +1,14 @@
 // bannière fixe
-let banner = document.getElementById("fixed-head");
+// let banner = document.getElementById("fixed-head");
 
-banner.style.display = "none";
-   // mettre transition
-document.addEventListener("scroll", function(){ 
-    if (document.documentElement.scrollTop > 1000){
-    banner.style.display = "block"}
-    else 
-    banner.style.display = "none"
-});
+// banner.style.display = "none";
+//    // mettre transition
+// document.addEventListener("scroll", function(){ 
+//     if (document.documentElement.scrollTop > 1000){
+//     banner.style.display = "block"}
+//     else 
+//     banner.style.display = "none"
+// });
 
 let cita0, cita1, cita2, cita3, cita4, cita5, cita6;
 cita0 = "L'enseignement de l'informatique ne peut faire de personne un programmeur expert plus que l'étude des pinceaux et du pigment peut faire de quelqu'un un peintre expert."+`"`+ " - Eric S. Raymond";
@@ -31,41 +31,48 @@ function addSlide(n){
         slideIndex = 0;}
     else if (slideIndex < 0 ){
         slideIndex = citations.length -1 ;};
-    citations[slideIndex];
+        // console.log(slideIndex);
+    // citations[slideIndex];
     citation.innerHTML = `${citations[slideIndex]}`
 }
 
+{/* <a target="_blank" href=""></a> */}
+
+//  SLIDER DE PROJETS
+
+let snake, apiP1, apiP2, maquette1, maquette2;
+snake = `<a class ="slideTransition" target="_blank" href="https://yacinedjahafi.github.io/Snake.github.io/"><img src="img/projets/Snake.png" alt=""></a>`
+apiP1 = `<a class ="slideTransition" target="_blank" href="https://yacinedjahafi.github.io/API-Search-D-D.github.io/"><img src = "img/projets/API-Search1.png"></a>`
+apiP2 = `<a class ="slideTransition" target="_blank" href="https://yacinedjahafi.github.io/API-Search-D-D.github.io/"><img src = "img/projets/API-Search2.png"></a>`
+maquette1 = `<a class ="slideTransition" target="_blank" href="https://yacinedjahafi.github.io/Maquette-1.github.io/"><img src = "img/projets/maquette-1.png"></a>`
+maquette2 = `<a class ="slideTransition" target="_blank" href="https://yacinedjahafi.github.io/Maquette-2.github.io/"><img src = "img/projets/maquette-2.png"></a>`
+const slide = [snake, apiP1, apiP2, maquette1, maquette2];
+const projets = document.getElementById("projet");
+
+let projetIndex = 0;
+// console.log(slide.length);
+function Slider(m){
+    projetIndex += m;
+    
+    if ( projetIndex > slide.length -1){
+        projetIndex = 0;}
+    else if (projetIndex < 0 ){
+        projetIndex = slide.length -1 };
+        console.log(projetIndex)
+    // slide[projetIndex];
+    projets.innerHTML = `${slide[projetIndex]}`
+    // console.log(projets.innerHTML)
+};
+//  diaporama des slides:
+// FAIRE UNE ANIMATION POUR LE SLIDER
+// setInterval("Slider(1)", 8000)
 
 
-
-
-
-
-
-
-/* // On creer un array avec nos images
-const slide = ["0.jpg", "1.jpg"];
-let numero = 0;
-
-// on creer le slider
-function changeSlide(sens) {
-    numero = numero + sens;
-    if (numero = 1)
-    numero = 0;
-    if (numero = 0)
-    numero = 1;
-    document.getElementById("slide").src = "img/" + slide[numero];
-}
-
-
-// Fonction pour le thumbnail interactif
-function thumbnail(number) {
-    document.getElementById("slide").src = "img/" + number + ".jpg";
-}
-
-
-
-
- si on veut avoir un diaporama
-On écrit le nom de la fonction et la durée par diapo en ms
-setInterval("changeSlide(1)", 4000) */
+// SLIDER DESCRIPTION
+/* let descSnake, descApiP1, descApiP2, descMaquette1, descMaquette2;
+descSnake = ``
+descApiP1 = ``
+descApiP2 = ``
+descMaquette1 = ``
+descMaquette2 = ``
+const slide = [snake, apiP1, apiP2, maquette1, maquette2]; */

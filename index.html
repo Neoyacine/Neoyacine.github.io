@@ -11,7 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Parisienne&display=swap" rel="stylesheet">
     <script defer src="index.js"></script>
-    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+    <!-- <script defer src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script> -->
     <link rel="stylesheet" href="slider.css">
     <!-- icone sur l'onglet -->
     <link rel="shortcut icon" href="img/devweb2.png">
@@ -25,7 +25,7 @@
         <div class="flexhead">
             <div id="logo-dev">
                 <img draggable="false" class="logo" src="img/devweb1.png" alt="logo dev web">
-                <a draggable="false" href="#maquette"><img draggable="false" src="img/message-hover.png" alt="message voulez vous voir mes projets"></a>
+                <a draggable="false" href="#projets-container"><img draggable="false" src="img/message-hover.png" alt="message voulez vous voir mes projets"></a>
             </div> <!--<a href="https://www.flaticon.com/fr/icones-gratuites/developpeur" title="développeur icônes">Développeur icônes créées par Freepik - Flaticon</a> -->
             <input type="checkbox" id="active"> <!--made by Yuhomyan https://codepen.io/yuhomyan/pen/ExKvNVa-->
             <label for="active" class="menu-btn"><span></span></label>
@@ -34,22 +34,22 @@
                 <ul>
                     <li><a href="#">Accueil</a></li>
                     <li><a href="#section2">À propos</a></li>
-                    <li><a href="#maquette">Projets</a></li>
+                    <li><a href="#projets-container">Projets</a></li>
                     <!-- <li><a href="#">Contacts</a></li> -->
                 </ul>
         </div>
     </div>
     </header>
-        <div id="fixed-head">
+        <!-- <div id="fixed-head">
             <p>Yacine Djahafi</p>
-        </div>
+        </div> -->
 
         <section id="section1">
             <h1 class = "animation">YACINE DJAHAFI</h1><br><br>
             <h2>Développeur Web Junior</h2> <br>
             <!-- Slider de citation -->
             
-            <div id="cursor">
+            <div id="citation-container">
                 <h3 id="citations">"L'enseignement de l'informatique ne peut faire de personne un programmeur expert plus que l'étude des pinceaux et du pigment peut faire de quelqu'un un peintre expert." - Eric S. Raymond</h3>
                 <p onclick="addSlide(-1)" href="" class="previous"><</p>
                 <p onclick="addSlide(1)" href="" class="next">></p>
@@ -152,7 +152,17 @@
         </div>
 
         <h2>Projets réalisés</h2>
-        <ul id="maquette">
+        <!-- CREATION DU SLIDER -->
+       
+<div id="projets-container">
+    <a id="projet" draggable="false" target="_blank" href="https://yacinedjahafi.github.io/Snake.github.io/"><img draggable="false" src="img/projets/Snake.png" alt="" ></a>
+    <h3 id="description">Jeu du Snake</h3>
+    <p>Projet réalisé pour s'entrainer sur les fonctions ainsi que sur les évènements.</p>
+    <p onclick="Slider(-1)" href="" class="previousSlide"><</p>
+    <p onclick="Slider(1)" href="" class="nextSlide">></p>
+    
+</div>
+        <!-- <ul id="maquette">
             <li>
                 <figure>
                     <a target="_blank" href="https://yacinedjahafi.github.io/Maquette-1.github.io/"><img draggable="false" id="maqmob1" src="img/maqu1mobi.png" alt="maquette 1 vue mobile" class="maqmob"></a>
@@ -178,9 +188,11 @@
                 </figure>
             </li>
         </ul>
-    </section>
-<!-- CREATION DU SLIDER -->
-        <!-- 
+        
+    </section> -->
+
+
+<!--
         <section>
             <h3>Welcome to the slider zone V2</h3>
             <img id="slide" draggable="false" src="img/maqu1pc.png" alt="">

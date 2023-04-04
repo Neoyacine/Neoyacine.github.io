@@ -10,7 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Parisienne&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer">
     <script defer src="index.js"></script>
     <!-- <script defer src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script> -->
     <link rel="stylesheet" href="slider.css">
@@ -19,25 +19,25 @@
     <title>Yacine Djahafi | Portfolio</title>
 </head>
 <body>
-
     <div id="bgimg">
-    <header>
-        
-        <div class="flexhead">
-            <div id="logo-dev">
-                <img draggable="false" class="logo" src="img/devweb1.png" alt="logo dev web">
-                <a draggable="false" href="#projets-container"><img draggable="false" src="img/message-hover.png" alt="message voulez vous voir mes projets"></a>
-           
-            <!-- <div >
-                <ul id="flex-menu">
-                    <li><a href="#">Accueil</a></li>
-                    <li><a href="#section2">À propos</a></li>
-                    <li><a href="#projets-container">Projets</a></li>
-                    <li><a href="#">Contacts</a></li>
-                </ul> -->
+        <header>
+
+            <div class="flexhead">
+                <div id="logo-dev">
+                    <img draggable="false" class="logo" src="img/devweb1.png" alt="logo dev web">
+                    <a draggable="false" href="#projets-container"><img draggable="false" src="img/message-hover.png" alt="message voulez vous voir mes projets"></a>
+                </div>
+                    <!-- <div >
+                        <ul id="flex-menu">
+                            <li><a href="#">Accueil</a></li>
+                            <li><a href="#section2">À propos</a></li>
+                            <li><a href="#projets-container">Projets</a></li>
+                            <li><a href="#">Contacts</a></li>
+                        </ul> 
+                    </div>-->
             </div>
-            
-    </header>
+        </header>
+    
         <!-- <div id="fixed-head">
             <p>Yacine Djahafi</p>
         </div> -->
@@ -50,9 +50,9 @@
             <!-- Slider de citation -->
             <div id="citation-container">
                 <div class="citationSlider">
-                    <p onclick="addSlide(-1)" href="" class="previous"><</p>
+                    <p onclick="addSlide(-1)" class="previous">&lt;</p>
                     <h3 id="citations">"L'enseignement de l'informatique ne peut faire de personne un programmeur expert plus que l'étude des pinceaux et du pigment peut faire de quelqu'un un peintre expert." - Eric S. Raymond</h3>
-                    <p onclick="addSlide(1)" href="" class="next">></p>
+                    <p onclick="addSlide(1)" class="next">></p>
                 </div>
             </div>
             <div class="reseaux">
@@ -76,28 +76,18 @@
             <div class="flex">
                 <div class="section, propos">
                     <p>Je m'appelle Yacine, j'ai 29 ans.</p>
-                    <p>Ayant travaillé ces huit dernières années dans la restauration, cela m'a permis de comprendre et répondre au besoin des clients, savoir réagir en cas de conflits et gérer dans des périodes de stress une équipe pour ainsi pouvoir être le plus efficace possible. </p>
+                    <p>J'ai travaillé ces huit dernières années dans la restauration</p>
                     <p>L'univers de la programmation a su attiser ma curiosité, je suis <strong>convaincu</strong> d'avoir trouvé ma voie dans ce domaine si vaste et en constante évolution.</p>
                     <p>Je suis actuellement une <strong>formation au GRETA</strong> pour obtenir, à terme, un <strong>titre professionnel de développeur web et web mobile</strong> à la fin de l'année 2023.</p>
                 </div>
                 <div>
                     <img draggable="false" id="ma-photo" src="img/photo.jpg" alt="photo de moi">
                     <p id="cv">
-                        <a href="img/Yacine Djahafi - CV.pdf" target="_blank">Télécharger mon CV</a>
+                        <a href="img/YacineDjahafi-CV.pdf" target="_blank">Télécharger mon CV</a>
                     </p>
                 </div>
             </div>
         </section>
-
-    <!-- <section id="section3">
-        <h2>Stages</h2>
-        <div class="stage section">
-            <p>J'ai la <strong>chance</strong> de pouvoir effectuer deux stages au cours de cette formation.</p>
-            <p>Cela nous permettra de valider nos acquis, d'apprendre beaucoup plus ainsi que se familiariser avec un environnement de travail dans un cadre professionnel.</p>
-            <div><p class="text">Le premier stage devra s'effectuer du 11 avril au 5 mai.</p></div>
-            <div><p class="text">Le second du 11 juillet au 8 septembre.</p></div>
-        </div>
-    </section> -->
 
     <section id="section4">
         <h2>Pourquoi me choisir?</h2>
@@ -151,8 +141,8 @@
         <div id="projets-container">
             <a id="projet" draggable="false" target="_blank" href="https://yacinedjahafi.github.io/Snake.github.io/"><img draggable="false" src="img/projets/Snake.png" alt="" ></a>
         <div class="sliderprojet">
-            <p onclick="Slider(-1)" href="" class="previousSlide"><</p>
-            <p onclick="Slider(1)" href="" class="nextSlide">></p>
+            <p onclick="Slider(-1)" class="previousSlide">&lt;</p>
+            <p onclick="Slider(1)" class="nextSlide">></p>
             </div>
             
             <p id="description"><span><strong>Jeu du Snake</strong></span><br>Projet réalisé pour s'entrainer sur les fonctions ainsi que sur les évènements. Un système de points est à implanter.</p>
@@ -174,6 +164,6 @@
     <footer>
         <p>Site fait par Yacine Djahafi</p>
     </footer>
-
+</div>
 </body>
 </html>

@@ -348,7 +348,7 @@ footer p{
     }
     .section5{
         /* background-color: #42a5f5; */
-        background:linear-gradient(to right, rgba(255, 255, 255, 0.692), rgba(1, 1, 66, 0.356)),  no-repeat url("img/hard-skill2.jpg");
+        background:linear-gradient(to right, rgba(255, 255, 255, 0.507), rgba(1, 1, 66, 0.158)),  no-repeat url("img/hard-skill2.jpg");
         background-size: cover;
         background-position: center;
     }

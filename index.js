@@ -35,7 +35,7 @@ function addSlide(n){
     // citations[slideIndex];
     citation.innerHTML = `${citations[slideIndex]}`
 }
-setInterval("addSlide(1)", 6000);
+setInterval("addSlide(1)", 8000);
 
 {/* <a target="_blank" href=""></a> */}
 

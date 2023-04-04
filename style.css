@@ -480,7 +480,7 @@ footer p{
         width: 50%;
     }
     h4{
-        padding-top: 2%;
+        padding: 3% 0 4% 0;
     }
     .flex{
         width: 80vw;
@@ -563,18 +563,18 @@ footer p{
         transform:translateX(0%);
     }
 }
-
-#description{
+/* découvrir pourquoi ça bug */
+/* #description{
     animation-duration: 0.5s;
     animation-name: description;
-    /* animation-iteration-count: 1; */
+    animation-iteration-count: 1;
 }
 
 @keyframes description {
     0%{
-        transform:translateY(-100%);
+        transform:translateY(200%);
     }
     100%{
         transform:translateY(0%);
     }
-}
+} */

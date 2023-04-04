@@ -548,3 +548,33 @@ footer p{
         font-size: 18px;
     }
 }
+
+#projet img{
+    animation-duration: 0.5s;
+    animation-name: animation;
+    animation-iteration-count: 1;
+}
+
+@keyframes animation {
+    0%{
+        transform:translateX(-100%);
+    }
+    100%{
+        transform:translateX(0%);
+    }
+}
+
+#description{
+    animation-duration: 0.5s;
+    animation-name: description;
+    /* animation-iteration-count: 1; */
+}
+
+@keyframes description {
+    0%{
+        transform:translateY(-100%);
+    }
+    100%{
+        transform:translateY(0%);
+    }
+}

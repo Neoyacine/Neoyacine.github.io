@@ -609,7 +609,7 @@ footer p{
         margin: 1% 1%;
     }
     #projets-container{
-        margin: 50px auto 0 auto;
+        margin: 30px auto 0 auto;
         text-align: center;
         height: 93vh;
     }
@@ -651,7 +651,9 @@ footer p{
     }
     #description{
         margin: 20px auto;
-        font-weight: 700;
+        /* line-height: 1.5rem; */
+        font-size: 20px;
+        width: 60vw;
     }
     
     

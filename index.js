@@ -35,6 +35,7 @@ function addSlide(n){
     // citations[slideIndex];
     citation.innerHTML = `${citations[slideIndex]}`
 }
+setInterval("addSlide(1)", 6000);
 
 {/* <a target="_blank" href=""></a> */}
 
@@ -49,6 +50,18 @@ maquette2 = `<a class ="slideTransition" target="_blank" href="https://yacinedja
 const slide = [snake, apiP1, apiP2, maquette1, maquette2];
 const projets = document.getElementById("projet");
 
+// SLIDER DESCRIPTION
+
+const description = document.getElementById("description")
+let descSnake, descApiP1, descApiP2, descMaquette1, descMaquette2;
+descSnake = `<strong>Jeu du Snake</strong><br>Projet réalisé pour s'entrainer sur les fonctions ainsi que sur les évènements.</p>`
+descApiP1 = `<strong>Application de recherche (première page)</strong><br>Pour l'instant, cette page nous permet de rechercher parmis des personnages, classes et armes déjà enregistrés. La recherche s'effectue à partir de trois caractères, lorsque ce projet sera terminé, il sera possible de créer son propre personnage. Ce sera par exemple utile pour des joueurs de role play du type Dungeons & Dragons.</p>`
+descApiP2 = `<strong>Application de recherche (deuxième page)</strong><br>Apparait uniquement lorsqu'un personnage existant est recherché, une fonctionnalité de suggestion dans la barre de recherche sera implanté. Une liste des personnages existant sera également affiché sur la page de recherche.</p>`
+descMaquette1 = `<strong>Premier site fait en HTML/CSS</strong><br>Il s'agit d'un site fait à partir d'une maquette lors des mes deux premières semaines d'apprentissage pour s'entrainer au HTML/CSS ainsi qu'au responsive.</p>`
+descMaquette2 = `<strong>Deuxième site fait en HTML/CSS</strong><br>Egalement effectué à partir d'une maquette, pour continuer l'application de l'apprentissage d'HTML/CSS.</p>`
+const descriptionSlide = [descSnake, descApiP1, descApiP2, descMaquette1, descMaquette2];
+
+
 let projetIndex = 0;
 // console.log(slide.length);
 function Slider(m){
@@ -61,18 +74,15 @@ function Slider(m){
         console.log(projetIndex)
     // slide[projetIndex];
     projets.innerHTML = `${slide[projetIndex]}`
+    description.innerHTML = `${descriptionSlide[projetIndex]}`
     // console.log(projets.innerHTML)
 };
+
+
 //  diaporama des slides:
 // FAIRE UNE ANIMATION POUR LE SLIDER
 // setInterval("Slider(1)", 8000)
 
+// <strong></strong><br></p>
 
-// SLIDER DESCRIPTION
-/* let descSnake, descApiP1, descApiP2, descMaquette1, descMaquette2;
-descSnake = ``
-descApiP1 = ``
-descApiP2 = ``
-descMaquette1 = ``
-descMaquette2 = ``
-const slide = [snake, apiP1, apiP2, maquette1, maquette2]; */
+

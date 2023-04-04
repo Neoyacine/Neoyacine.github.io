@@ -14,6 +14,10 @@ body{
 header, #section1{
     color: #ffffff;
 }
+.logo{
+    width: 90px;
+    margin: 25px 0 0 25px;
+}
 #linkedin{
     width: 50px;
     margin-top: 2%;
@@ -121,6 +125,7 @@ a:hover{
 }
 .icon{
     text-shadow: none;
+    font-size: 25px;
 }
 
 
@@ -132,7 +137,7 @@ a:hover{
 
 .sidebar{
     position: fixed;
-    top: 11%;
+    top: 20%;
     left: 0px;
     background-color: rgba(255, 255, 255, 0.911);
     box-shadow: 2px 2px 2px #6b6b6bb0;
@@ -141,6 +146,9 @@ a:hover{
     border-radius: 5px;
 }
 
+#logo-email, #logo-phone, #logo-linkedin{ 
+    width: 30px;
+}
 
 
 /* Début du navigateur */
@@ -415,7 +423,7 @@ footer p{
     }
     .previous, .next{
         position: absolute;
-        /* bottom: 20vh; */
+        bottom: 39vh;
         cursor: pointer;
         font-weight: 900;
         font-size: 25px;
@@ -426,30 +434,35 @@ footer p{
         transition: 0.5s;
     }
     .previous{
-        bottom: 50vh;
         left: -2vw;
     }
     .next{
         left: 75vw;
-        bottom: 50vh;
     }
 
     /* SLIDER PROJET VUE TELEPHONE */
     #projets-container img{
         width: 100vw;
-        height: 40vh;
+        height: 30vh;
     }
+    #projets-container #description span{
+        display: block;
+        margin: auto;
+        width: 50vw;
+    }
+  
     #projets-container{
         margin: 50px auto 0 auto;
         text-align: center;
-        height: 58vh;
+        height: 63vh;
     }
     #projet{
         position: static;
     }
     .previousSlide, .nextSlide{
-        position:relative;
+        /* position:relative; */
         cursor: pointer;
+        /* margin-top: 20px; */
         font-weight: 900;
         font-size: 25px;
         border: 2px solid rgb(94, 94, 94);
@@ -458,14 +471,25 @@ footer p{
         padding: 9px;
         transition: 0.5s;
     }
+    /* #projets-container p{
+        margin: 15px 25px;
+    } */
+    #description{
+        margin-top: 20px;
+    }
+    .sliderprojet{
+        display: flex;
+        position: absolute;
+        gap: 60vw;
+        width: 100%;
+        margin: auto;
+    }
     .previousSlide{
-        right: 1vw;
-        bottom: 11vh;
+        margin: 10px 0 0 10vw;
     }
-    .nextSlide{
-        left: 75vw;
-        bottom: 16vh;
-    }
+   .nextSlide{
+        margin: 10px 10vw 0 0;
+    } 
     .previousSlide:hover{
         transform: scale(1.1);
         color: rgb(28, 100, 233);
@@ -646,7 +670,7 @@ footer p{
         height: 70vh;
     }
     #description{
-        margin: 20px auto;
+        margin: 50px auto;
         /* line-height: 1.5rem; */
         font-size: 20px;
         width: 60vw;

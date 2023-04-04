@@ -54,11 +54,11 @@ const projets = document.getElementById("projet");
 
 const description = document.getElementById("description")
 let descSnake, descApiP1, descApiP2, descMaquette1, descMaquette2;
-descSnake = `<strong>Jeu du Snake</strong><br>Projet réalisé pour s'entrainer sur les fonctions ainsi que sur les évènements.</p>`
-descApiP1 = `<strong>Application de recherche (première page)</strong><br>Pour l'instant, cette page nous permet de rechercher parmis des personnages, classes et armes déjà enregistrés. La recherche s'effectue à partir de trois caractères, lorsque ce projet sera terminé, il sera possible de créer son propre personnage. Ce sera par exemple utile pour des joueurs de role play du type Dungeons & Dragons.</p>`
-descApiP2 = `<strong>Application de recherche (deuxième page)</strong><br>Apparait uniquement lorsqu'un personnage existant est recherché, une fonctionnalité de suggestion dans la barre de recherche sera implanté. Une liste des personnages existant sera également affiché sur la page de recherche.</p>`
-descMaquette1 = `<strong>Premier site fait en HTML/CSS</strong><br>Il s'agit d'un site fait à partir d'une maquette lors des mes deux premières semaines d'apprentissage pour s'entrainer au HTML/CSS ainsi qu'au responsive.</p>`
-descMaquette2 = `<strong>Deuxième site fait en HTML/CSS</strong><br>Egalement effectué à partir d'une maquette, pour continuer l'application de l'apprentissage d'HTML/CSS.</p>`
+descSnake = `<span><strong>Jeu du Snake</strong></span><br><br>Projet réalisé pour s'entrainer sur les fonctions ainsi que sur les évènements.</p>`
+descApiP1 = `<span><strong>Application de recherche (première page)</strong></span><br>Cette page permet de rechercher parmis des personnages, classes et armes déjà enregistrés. Elle s'effectue à partir de trois caractères, il sera possible de créer à terme son propre personnage. Ce sera utile pour des joueurs de role play du type Dungeons & Dragons.</p>`
+descApiP2 = `<span><strong>Application de recherche (deuxième page)</strong></span><br><br>Apparait uniquement lorsqu'un personnage existant est recherché, une fonctionnalité de suggestion dans la barre de recherche sera implanté. Une liste des personnages existant sera également affiché sur la page de recherche.</p>`
+descMaquette1 = `<span><strong>Premier site fait en HTML/CSS</strong></span><br><br>Il s'agit d'un site fait à partir d'une maquette lors des mes deux premières semaines d'apprentissage pour s'entrainer au HTML/CSS ainsi qu'au responsive.</p>`
+descMaquette2 = `<span><strong>Deuxième site fait en HTML/CSS</strong></span><br><br>Egalement effectué à partir d'une maquette, pour continuer l'application de l'apprentissage d'HTML/CSS.</p>`
 const descriptionSlide = [descSnake, descApiP1, descApiP2, descMaquette1, descMaquette2];
 
 

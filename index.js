@@ -31,22 +31,19 @@ function addSlide(n){
         slideIndex = 0;}
     else if (slideIndex < 0 ){
         slideIndex = citations.length -1 ;};
-        // console.log(slideIndex);
-    // citations[slideIndex];
     citation.innerHTML = `${citations[slideIndex]}`
 }
 setInterval("addSlide(1)", 8000);
 
-{/* <a target="_blank" href=""></a> */}
 
 //  SLIDER DE PROJETS
 
 let snake, apiP1, apiP2, maquette1, maquette2;
-snake = `<a class ="slideTransition" target="_blank" href="https://yacinedjahafi.github.io/Snake.github.io/"><img src="img/projets/Snake.png" alt=""></a>`
-apiP1 = `<a class ="slideTransition" target="_blank" href="https://yacinedjahafi.github.io/API-Search-D-D.github.io/"><img src = "img/projets/API-Search1.png"></a>`
-apiP2 = `<a class ="slideTransition" target="_blank" href="https://yacinedjahafi.github.io/API-Search-D-D.github.io/"><img src = "img/projets/API-Search2.png"></a>`
-maquette1 = `<a class ="slideTransition" target="_blank" href="https://yacinedjahafi.github.io/Maquette-1.github.io/"><img src = "img/projets/maquette-1.png"></a>`
-maquette2 = `<a class ="slideTransition" target="_blank" href="https://yacinedjahafi.github.io/Maquette-2.github.io/"><img src = "img/projets/maquette-2.png"></a>`
+snake = `<a draggable="false" class ="slideTransition" target="_blank" href="https://yacinedjahafi.github.io/Snake.github.io/"><img draggable="false" src="img/projets/Snake.png" alt=""></a>`
+apiP1 = `<a draggable="false" class ="slideTransition" target="_blank" href="https://yacinedjahafi.github.io/API-Search-D-D.github.io/"><img draggable="false" src = "img/projets/API-Search1.png"></a>`
+apiP2 = `<a draggable="false" class ="slideTransition" target="_blank" href="https://yacinedjahafi.github.io/API-Search-D-D.github.io/"><img draggable="false" src = "img/projets/API-Search2.png"></a>`
+maquette1 = `<a draggable="false" class ="slideTransition" target="_blank" href="https://yacinedjahafi.github.io/Maquette-1.github.io/"><img draggable="false" src = "img/projets/maquette-1.png"></a>`
+maquette2 = `<a draggable="false" class ="slideTransition" target="_blank" href="https://yacinedjahafi.github.io/Maquette-2.github.io/"><img draggable="false" src = "img/projets/maquette-2.png"></a>`
 const slide = [snake, apiP1, apiP2, maquette1, maquette2];
 const projets = document.getElementById("projet");
 
@@ -54,16 +51,15 @@ const projets = document.getElementById("projet");
 
 const description = document.getElementById("description")
 let descSnake, descApiP1, descApiP2, descMaquette1, descMaquette2;
-descSnake = `<span><strong>Jeu du Snake</strong></span><br><br>Projet réalisé pour s'entrainer sur les fonctions ainsi que sur les évènements.</p>`
+descSnake = `<span><strong>Jeu du Snake</strong></span><br>Projet réalisé pour s'entrainer sur les fonctions ainsi que sur les évènements.</p>`
 descApiP1 = `<span><strong>Application de recherche (première page)</strong></span><br>Cette page permet de rechercher parmis des personnages, classes et armes déjà enregistrés. Elle s'effectue à partir de trois caractères, il sera possible de créer à terme son propre personnage. Ce sera utile pour des joueurs de role play du type Dungeons & Dragons.</p>`
-descApiP2 = `<span><strong>Application de recherche (deuxième page)</strong></span><br><br>Apparait uniquement lorsqu'un personnage existant est recherché, une fonctionnalité de suggestion dans la barre de recherche sera implanté. Une liste des personnages existant sera également affiché sur la page de recherche.</p>`
-descMaquette1 = `<span><strong>Premier site fait en HTML/CSS</strong></span><br><br>Il s'agit d'un site fait à partir d'une maquette lors des mes deux premières semaines d'apprentissage pour s'entrainer au HTML/CSS ainsi qu'au responsive.</p>`
-descMaquette2 = `<span><strong>Deuxième site fait en HTML/CSS</strong></span><br><br>Egalement effectué à partir d'une maquette, pour continuer l'application de l'apprentissage d'HTML/CSS.</p>`
+descApiP2 = `<span><strong>Application de recherche (deuxième page)</strong></span><br>Apparait uniquement lorsqu'un personnage existant est recherché, une fonctionnalité de suggestion dans la barre de recherche sera implanté. Une liste des personnages existant sera également affiché sur la page de recherche.</p>`
+descMaquette1 = `<span><strong>Premier site fait en HTML/CSS</strong></span><br>Il s'agit d'un site fait à partir d'une maquette lors des mes deux premières semaines d'apprentissage pour s'entrainer au HTML/CSS ainsi qu'au responsive.</p>`
+descMaquette2 = `<span><strong>Deuxième site fait en HTML/CSS</strong></span><br>Egalement effectué à partir d'une maquette, pour continuer l'application de l'apprentissage d'HTML/CSS.</p>`
 const descriptionSlide = [descSnake, descApiP1, descApiP2, descMaquette1, descMaquette2];
 
 
 let projetIndex = 0;
-// console.log(slide.length);
 function Slider(m){
     projetIndex += m;
     
@@ -71,18 +67,15 @@ function Slider(m){
         projetIndex = 0;}
     else if (projetIndex < 0 ){
         projetIndex = slide.length -1 };
-        console.log(projetIndex)
-    // slide[projetIndex];
     projets.innerHTML = `${slide[projetIndex]}`
     description.innerHTML = `${descriptionSlide[projetIndex]}`
-    // console.log(projets.innerHTML)
 };
 
 
 //  diaporama des slides:
 // FAIRE UNE ANIMATION POUR LE SLIDER
-// setInterval("Slider(1)", 8000)
+setInterval("Slider(1)", 8000)
 
-// <strong></strong><br></p>
+
 
 

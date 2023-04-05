@@ -103,10 +103,15 @@ transition: 0.5s;
 }
 a{
     color: black;
-    font-weight: 700;
 }
-a:hover{
+#contact a{
+    color: rgb(233, 250, 0);
+    font-weight: 700;
+    transition: 0.5s;
+}
+#contact a:hover{
     color: rgb(8, 76, 137);
+    transform: scale(1.1);
 }
 #bgimg{
     background: linear-gradient(to right, rgba(18, 23, 53, 0.692), rgba(1, 1, 66, 0.356)) ,url("img/pexels-luis-gomes-546819.jpg");
@@ -256,6 +261,9 @@ footer p{
     #contact p{
         padding: 0;
         margin: 0 auto;
+    }
+    #contact{
+        background-color: #dbdbdbaf
     }
     /* SLIDER CITATION VUE TELEPHONE */
     #citation-container{

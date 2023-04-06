@@ -33,7 +33,7 @@ function addSlide(n){
         slideIndex = citations.length -1 ;};
     citation.innerHTML = `${citations[slideIndex]}`
 }
-setInterval("addSlide(1)", 8000);
+setInterval("addSlide(1)", 10000);
 
 
 //  SLIDER DE PROJETS
@@ -76,7 +76,7 @@ function Slider(m){
 
 //  diaporama des slides:
 // FAIRE UNE ANIMATION POUR LE SLIDER
-setInterval("Slider(1)", 8000)
+setInterval("Slider(1)", 10000)
 
 
 

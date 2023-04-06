@@ -262,6 +262,7 @@ footer p{
         padding: 0;
         margin: 0 auto;
     }
+
     #contact{
         background-color: #dbdbdbaf
     }
@@ -269,7 +270,7 @@ footer p{
     #citation-container{
         margin: auto;
         height: 250px;
-        width: 70vw;
+        width: 60vw;
     }
     #citations{
         position: static;
@@ -287,10 +288,10 @@ footer p{
         transition: 0.5s;
     }
     .previous{
-        left: -2vw;
+        left: 5vw;
     }
     .next{
-        left: 75vw;
+        right: 5vw;
     }
     /* SLIDER PROJET VUE TELEPHONE */
     #projets-container img{
@@ -559,13 +560,11 @@ footer p{
         font-size: 18px;
     }
 }
-
 #projet img{
     animation-duration: 0.5s;
     animation-name: animation;
     animation-iteration-count: 1;
 }
-
 @keyframes animation {
     0%{
         transform:translateX(-100%);
@@ -575,7 +574,7 @@ footer p{
     }
 }
 /* découvrir pourquoi ça bug */
-/* #description{
+#description{
     animation-duration: 0.5s;
     animation-name: description;
     animation-iteration-count: 1;
@@ -583,9 +582,9 @@ footer p{
 
 @keyframes description {
     0%{
-        transform:translateY(200%);
+        transform:translateY(100%);
     }
     100%{
         transform:translateY(0%);
     }
-} */
+}

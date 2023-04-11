@@ -1,4 +1,4 @@
-// bannière fixe
+// BANNIERE FIXE
 // let banner = document.getElementById("fixed-head");
 
 // banner.style.display = "none";
@@ -10,6 +10,30 @@
 //     banner.style.display = "none"
 // });
 
+// ANIMATION APPARATION LORS DU SCOLL
+const observer = new IntersectionObserver((entries) =>{
+    entries.forEach((entry)=>{
+        if (entry.isIntersecting){
+            entry.target.classList.add('show');
+           
+        } else {
+            entry.target.classList.remove('show');
+        }
+        console.log(entry);
+    }); console.log(entries);
+});
+
+const hiddenElementsUp = document.querySelectorAll('.hidden-up');
+hiddenElementsUp.forEach((el) => observer.observe(el));
+const hiddenElementsDown = document.querySelectorAll('.hidden-down');
+hiddenElementsDown.forEach((el) => observer.observe(el));
+const hiddenElementsLeft = document.querySelectorAll('.hidden-left');
+hiddenElementsLeft.forEach((el) => observer.observe(el));
+const hiddenElementsRight = document.querySelectorAll('.hidden-right');
+hiddenElementsRight.forEach((el) => observer.observe(el));
+
+
+// CARROUSEL DE CITATIONS
 let cita0, cita1, cita2, cita3, cita4, cita5, cita6;
 cita0 = "L'enseignement de l'informatique ne peut faire de personne un programmeur expert plus que l'étude des pinceaux et du pigment peut faire de quelqu'un un peintre expert."+`"`+ " - Eric S. Raymond";
 cita1 = '"'+"Comme la Hongrie, le monde informatique a une langue qui lui est propre. Mais il y a une différence. Si vous restez assez longtemps avec des Hongrois, vous finirez bien par comprendre de quoi ils parlent."+`"`+ "- Dave Barry";
@@ -21,7 +45,7 @@ cita6 = '"'+"Aujourd’hui, la programmation est devenue une course entre le dé
 
 
  // SLIDER DE CITATIONS 
-const citation = document.getElementById("citations");
+const citation = document.querySelector(".citations");
 let citations = [cita0, cita1, cita2, cita3, cita4, cita5, cita6];
 let slideIndex = 0;
 
@@ -33,7 +57,7 @@ function addSlide(n){
         slideIndex = citations.length -1 ;};
     citation.innerHTML = `${citations[slideIndex]}`
 }
-setInterval("addSlide(1)", 10000);
+// setInterval("addSlide(1)", 10000);
 
 
 //  SLIDER DE PROJETS
@@ -46,7 +70,7 @@ maquette1 = `<a draggable="false" class ="slideTransition" target="_blank" href=
 maquette2 = `<a draggable="false" class ="slideTransition" target="_blank" href="https://yacinedjahafi.github.io/Maquette-2.github.io/"><img draggable="false" src = "img/projets/maquette-2.png"></a>`
 apiMeteo = `<a draggable="false" class ="slideTransition" target="_blank" href="https://yacinedjahafi.github.io/api-meteo.github.io/"><img draggable="false" src = "img/projets/meteo.png"></a>`
 const slide = [snake, apiP1, apiP2, maquette1, maquette2, apiMeteo];
-const projets = document.getElementById("projet");
+const projets = document.querySelector(".projet");
 
 // SLIDER DESCRIPTION
 
@@ -76,7 +100,7 @@ function Slider(m){
 
 //  diaporama des slides:
 // FAIRE UNE ANIMATION POUR LE SLIDER
-setInterval("Slider(1)", 10000)
+// setInterval("Slider(1)", 10000)
 
 
 

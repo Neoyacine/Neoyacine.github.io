@@ -391,7 +391,9 @@ footer p{
     #projets-container img{
         width: 100vw;
         height: 30vh;
-   
+    }
+    .hidden-down, .hidden-left, .hidden-right, .hidden-up{
+        transition: all 2s;
     }
     #projets-container #description span{
         display: block;

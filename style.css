@@ -71,6 +71,9 @@ transition: 0.5s;
 .section{
     padding-bottom: 20px;
 }
+.section p{
+    margin: 2px 1vw;
+}
 #section1{
     text-align: center;
     padding: 5% 10% 5% 10%;
@@ -87,9 +90,10 @@ transition: 0.5s;
     background-color: #64b5f6;
 }
 .section5{
-    background:linear-gradient(to right, rgba(255, 255, 255, 0.692), rgba(1, 1, 66, 0.356));
+    /* background:linear-gradient(to right, rgba(255, 255, 255, 0.507)), rgba(1, 1, 66, 0.158);
     background-size: cover;
-    background-position: center;
+    background-position: center; */
+    background-color: rgb(236, 236, 236);
 }
 #section7{
     background-color: #dbdbdbaf;
@@ -132,6 +136,7 @@ a{
 /* appliquer un hover? */
 .sidebar{
     position: fixed;
+    z-index: 5;
     top: 20%;
     left: 0px;
     background-color: rgba(255, 255, 255, 0.911);
@@ -211,9 +216,10 @@ p{
     right: 1vh;
 }
 #flex-menu li{
-    margin: 2vh 1vw;
+    margin: 2vh 2vw;
     /* width: 124px; */
     height: 34px;
+    font-weight: 300;
 }
 #flex-menu li a{
 
@@ -320,7 +326,7 @@ footer p{
     }
     /* SLIDER PROJET VUE TELEPHONE */
     #projets-container img{
-        width: 100vw;
+        width: 97vw;
         height: 30vh;
     }
     .hidden-down, .hidden-left, .hidden-right, .hidden-up{
@@ -359,7 +365,7 @@ footer p{
         display: flex;
         position: absolute;
         gap: 60vw;
-        width: 100%;
+        width: 98vw;
         margin: auto;
     }
     .previousSlide{
@@ -591,38 +597,7 @@ footer p{
         padding: 0;
         font-size: 18px;
     }
-}
-.projet img{
-    animation-duration: 0.5s;
-    animation-name: animation;
-    animation-iteration-count: 1;
-
-}
-@keyframes animation {
-    0%{
-        transform:translateX(-100%);
-    }
-    100%{
-        transform:translateX(0%);
-    }
-}
-/* découvrir pourquoi ça bug */
-#description{
-    animation-duration: 0.5s;
-    animation-name: description;
-    animation-iteration-count: 1;
-}
-
-@keyframes description {
-    0%{
-        transform:translateY(100%);
-    }
-    100%{
-        transform:translateY(0%);
-    }
-}
-
-/* CREATION ANIMATION APPARITION DES ELEMENTS LORS DU SCROLL */
+    /* CREATION ANIMATION APPARITION DES ELEMENTS LORS DU SCROLL */
 
 .hidden-up{
     opacity: 0;
@@ -689,3 +664,34 @@ h4> .delay:nth-child(1){
 .second-delay:nth-child(8){
     transition-delay: 1500ms;
 }
+}
+.projet img{
+    animation-duration: 0.5s;
+    animation-name: animation;
+    animation-iteration-count: 1;
+
+}
+@keyframes animation {
+    0%{
+        transform:translateX(-100%);
+    }
+    100%{
+        transform:translateX(0%);
+    }
+}
+/* découvrir pourquoi ça bug */
+#description{
+    animation-duration: 0.5s;
+    animation-name: description;
+    animation-iteration-count: 1;
+}
+
+@keyframes description {
+    0%{
+        transform:translateY(100%);
+    }
+    100%{
+        transform:translateY(0%);
+    }
+}
+

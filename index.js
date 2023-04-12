@@ -17,10 +17,12 @@ const observer = new IntersectionObserver((entries) =>{
             entry.target.classList.add('show');
            
         } else {
-            entry.target.classList.remove('show');
+            // REPETITION?
+            // entry.target.classList.remove('show');
         }
-        console.log(entry);
-    }); console.log(entries);
+        // console.log(entry);
+    }); 
+    // console.log(entries);
 });
 
 const hiddenElementsUp = document.querySelectorAll('.hidden-up');

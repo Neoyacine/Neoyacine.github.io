@@ -83,12 +83,6 @@ h4> .delay:nth-child(1){
 .second-delay:nth-child(8){
     transition-delay: 1500ms;
 }
-/* .delay:nth-child(9){
-    transition-delay: 300ms;
-}
-.delay:nth-child(10){
-    transition-delay: 600ms;
-} */
 
 header, #section1{
     color: #ffffff;
@@ -357,6 +351,9 @@ footer p{
         padding: 0;
         margin: 0 auto;
     }
+    html{
+        overflow-x: hidden;
+    }
     #flex-menu{
         display: none;
     }
@@ -401,6 +398,7 @@ footer p{
         margin: auto;
         width: 50vw;
     }
+
     #description{
         width: 80vw;
         margin: 0 auto;
